@@ -1,0 +1,15 @@
+import statistics
+data = list(map(float, input("Enter numbers separated by spaces: ").split()))
+
+mean = statistics.mean(data)
+median = statistics.median(data)
+mode = statistics.mode(data)
+std_dev = statistics.stdev(data)
+variance = statistics.variance(data)
+
+print(f"\n Statistical Results:")
+print(f"Mean: {mean}")
+print(f"Median: {median}")
+print(f"Mode: {mode}")
+print(f"Standard Deviation: {std_dev}")
+print(f"Variance: {variance}")
